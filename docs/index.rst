@@ -10,13 +10,15 @@ Welcome to django-json-schema's documentation!
 ..
    |docs| |python-versions| |django-versions| |pypi-version|
 
-<One liner describing the project>
+A reusable Django app to store json schemas.
 
 Features
 ========
 
-* ...
-* ...
+* JsonSchemaModel consisting of
+    - name CharField
+    - schema JsonField
+    - validate(json) method to validate JSON against the schema.
 
 .. toctree::
    :maxdepth: 2
