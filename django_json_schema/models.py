@@ -19,6 +19,9 @@ class JsonSchema(models.Model):
         verbose_name = _("Json schema")
         verbose_name_plural = _("Json Schemas")
 
+    def __str__(self):
+        return self.name
+
     def validate(self, json: dict) -> None:
         try:
             validate(json, self.schema)
