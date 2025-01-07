@@ -16,6 +16,7 @@ Usage
 =====
 
 .. code-block:: python
+
     from django.db import models
     from django-json-schema.models import JsonSchema
 

@@ -49,6 +49,7 @@ Usage
 =====
 
 .. code-block:: python
+
     from django-json-schema.models import JsonSchema
 
     class ProductType(models.Model):
