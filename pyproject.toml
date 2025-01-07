@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{{ project_name }}"
+name = "django-json-schema"
 version = "0.1.0"
 description = "TODO"
 authors = [
@@ -31,10 +31,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/maykinmedia/{{ project_name|lower }}"
-Documentation = "http://{{ project_name|lower }}.readthedocs.io/en/latest/"
-"Bug Tracker" = "https://github.com/maykinmedia/{{ project_name|lower }}/issues"
-"Source Code" = "https://github.com/maykinmedia/{{ project_name|lower }}"
+Homepage = "https://github.com/maykinmedia/django_json_schema"
+Documentation = "http://django_json_schema.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://github.com/maykinmedia/django_json_schema/issues"
+"Source Code" = "https://github.com/maykinmedia/django_json_schema"
 
 [project.optional-dependencies]
 tests = [
@@ -55,7 +55,7 @@ release = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["{{ project_name|lower }}*"]
+include = ["django_json_schema*"]
 namespaces = true
 
 [tool.isort]
@@ -63,7 +63,7 @@ profile = "black"
 combine_as_imports = true
 skip = ["env", ".tox", ".history", ".eggs"]
 known_django = "django"
-known_first_party="{{ project_name|lower }}"
+known_first_party="django_json_schema"
 sections=["FUTURE", "STDLIB", "DJANGO", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
 
 [tool.pytest.ini_options]
@@ -80,7 +80,7 @@ files = [
 
 [tool.coverage.run]
 branch = true
-source = ["{{ project_name|lower }}"]
+source = ["django_json_schema"]
 omit = [
     # migrations run while django initializes the test db
     "*/migrations/*",

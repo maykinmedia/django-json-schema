@@ -9,7 +9,7 @@ Install from PyPI with pip:
 
 .. code-block:: bash
 
-    pip install {{ project_name }}
+    pip install django-json-schema
 
 
 Usage
