@@ -1,8 +1,8 @@
 include *.rst
 include LICENSE
-include {{ project_name }}/py.typed
-recursive-include {{ project_name }} *.html
-recursive-include {{ project_name }} *.txt
-recursive-include {{ project_name }} *.po
+include django_json_schema/py.typed
+recursive-include django_json_schema *.html
+recursive-include django_json_schema *.txt
+recursive-include django_json_schema *.po
 global-exclude __pycache__
 global-exclude *.py[co]
