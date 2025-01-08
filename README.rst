@@ -12,7 +12,7 @@ Welcome to django-json-schema's documentation!
 
 |python-versions| |django-versions| |pypi-version|
 
-A reusable Django app to store json schemas.
+A reusable Django app to store JSON schemas.
 
 .. contents::
 
@@ -50,7 +50,7 @@ Usage
 
 .. code-block:: python
 
-    from django-json-schema.models import JsonSchema
+    from django_json_schema.models import JsonSchema
 
     class ProductType(models.Model):
         schema = models.ForeignKey(JsonSchema, on_delete=models.PROTECT)

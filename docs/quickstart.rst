@@ -18,7 +18,7 @@ Usage
 .. code-block:: python
 
     from django.db import models
-    from django-json-schema.models import JsonSchema
+    from django_json_schema.models import JsonSchema
 
     class ProductType(models.Model):
         schema = models.ForeignKey(JsonSchema, on_delete=models.PROTECT)

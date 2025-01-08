@@ -10,7 +10,7 @@ Welcome to django-json-schema's documentation!
 ..
    |docs| |python-versions| |django-versions| |pypi-version|
 
-A reusable Django app to store json schemas.
+A reusable Django app to store JSON schemas.
 
 Features
 ========
