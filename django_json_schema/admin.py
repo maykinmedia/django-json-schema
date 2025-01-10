@@ -1,9 +1,10 @@
 import json
 
-from django.contrib import admin
 from django import forms
+from django.contrib import admin
 
 from .models import JsonSchema
+
 
 class IndentedJSONEncoder(json.JSONEncoder):
     def __init__(self, *args, indent, sort_keys, **kwargs):
@@ -15,7 +16,7 @@ class JsonSchemaAdminForm(forms.ModelForm):
 
     class Meta:
         model = JsonSchema
-        fields = '__all__'
+        fields = "__all__"
 
 
 @admin.register(JsonSchema)

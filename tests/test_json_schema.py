@@ -31,3 +31,13 @@ class TestJsonSchema(TestCase):
             ValidationError, "'price' is a required property"
         ):
             self.schema.validate({"name": "Eggs"})
+
+    def test_clean_with_invalid_schema(self):
+        self.schema.schema = {"type": []}
+        with self.assertRaisesMessage(
+            ValidationError, "[] is not valid under any of the given schemas"
+        ):
+            self.schema.clean()
+
+    def test_clean_with_valid_schema(self):
+        self.schema.clean()
