@@ -12,7 +12,7 @@ Welcome to django-json-schema's documentation!
 
 |python-versions| |django-versions| |pypi-version|
 
-<One liner describing the project>
+A reusable Django app to store JSON schemas.
 
 .. contents::
 
@@ -21,8 +21,10 @@ Welcome to django-json-schema's documentation!
 Features
 ========
 
-* ...
-* ...
+* JsonSchemaModel consisting of
+    - name CharField
+    - schema JsonField
+    - validate(json) method to validate JSON against the schema.
 
 Installation
 ============
@@ -32,6 +34,7 @@ Requirements
 
 * Python 3.10 or above
 * Django 4.2 or newer
+* A database supporting django.db.models.JSONField
 
 
 Install
@@ -45,7 +48,19 @@ Install
 Usage
 =====
 
-<document or refer to docs>
+.. code-block:: python
+
+    from django_json_schema.models import JsonSchema
+
+    class ProductType(models.Model):
+        schema = models.ForeignKey(JsonSchema, on_delete=models.PROTECT)
+
+    class Product(models.Model):
+        json = models.JsonField()
+        type = models.ForeignKey(ProductType, on_delete=models.CASCADE)
+
+        def clean(self):
+            self.type.schema.validate(self.json)
 
 Local development
 =================
