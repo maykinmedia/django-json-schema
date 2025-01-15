@@ -5,13 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "django-json-schema"
 version = "0.1.0"
-description = "TODO"
+description = "JSON schema model for django."
 authors = [
     {name = "Maykin Media", email = "support@maykinmedia.nl"}
 ]
 readme = "README.rst"
 license = {file = "LICENSE"}
-keywords = ["TODO"]
+keywords = ["django", "json schema"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Framework :: Django",
@@ -33,7 +33,6 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/maykinmedia/django_json_schema"
-Documentation = "http://django_json_schema.readthedocs.io/en/latest/"
 "Bug Tracker" = "https://github.com/maykinmedia/django_json_schema/issues"
 "Source Code" = "https://github.com/maykinmedia/django_json_schema"
 
