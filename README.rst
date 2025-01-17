@@ -1,7 +1,7 @@
 
 
 Welcome to django-json-schema-model's documentation!
-=================================================
+====================================================
 
 :Version: 0.1.0
 :Source: https://github.com/maykinmedia/django-json-schema-model
