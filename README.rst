@@ -1,10 +1,10 @@
 
 
-Welcome to django-json-schema's documentation!
+Welcome to django-json-schema-model's documentation!
 =================================================
 
 :Version: 0.1.0
-:Source: https://github.com/maykinmedia/django-json-schema
+:Source: https://github.com/maykinmedia/django-json-schema-model
 :Keywords: ``<keywords>``
 :PythonVersion: 3.10
 
@@ -42,7 +42,7 @@ Install
 
 .. code-block:: bash
 
-    pip install django-json-schema
+    pip install django-json-schema-model
 
 
 Usage
@@ -50,7 +50,7 @@ Usage
 
 .. code-block:: python
 
-    from django_json_schema.models import JsonSchema
+    from django_json_schema_model.models import JsonSchema
 
     class ProductType(models.Model):
         schema = models.ForeignKey(JsonSchema, on_delete=models.PROTECT)
@@ -82,28 +82,28 @@ directory to the python path (or use ``python -m django <command>``):
     # django-admin makemessages -l nl
 
 
-.. |build-status| image:: https://github.com/maykinmedia/django-json-schema/workflows/Run%20CI/badge.svg
+.. |build-status| image:: https://github.com/maykinmedia/django-json-schema-model/workflows/Run%20CI/badge.svg
     :alt: Build status
-    :target: https://github.com/maykinmedia/django-json-schema/actions?query=workflow%3A%22Run+CI%22
+    :target: https://github.com/maykinmedia/django-json-schema-model/actions?query=workflow%3A%22Run+CI%22
 
-.. |code-quality| image:: https://github.com/maykinmedia/django-json-schema/workflows/Code%20quality%20checks/badge.svg
+.. |code-quality| image:: https://github.com/maykinmedia/django-json-schema-model/workflows/Code%20quality%20checks/badge.svg
      :alt: Code quality checks
-     :target: https://github.com/maykinmedia/django-json-schema/actions?query=workflow%3A%22Code+quality+checks%22
+     :target: https://github.com/maykinmedia/django-json-schema-model/actions?query=workflow%3A%22Code+quality+checks%22
 
 .. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github.com/psf/black
 
-.. |coverage| image:: https://codecov.io/gh/maykinmedia/django-json-schema/branch/main/graph/badge.svg
-    :target: https://codecov.io/gh/maykinmedia/django-json-schema
+.. |coverage| image:: https://codecov.io/gh/maykinmedia/django-json-schema-model/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/maykinmedia/django-json-schema-model
     :alt: Coverage status
 
-.. |docs| image:: https://readthedocs.org/projects/django-json-schema/badge/?version=latest
-    :target: https://django-json-schema.readthedocs.io/en/latest/?badge=latest
+.. |docs| image:: https://readthedocs.org/projects/django-json-schema-model/badge/?version=latest
+    :target: https://django-json-schema-model.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. |python-versions| image:: https://img.shields.io/pypi/pyversions/django-json-schema.svg
+.. |python-versions| image:: https://img.shields.io/pypi/pyversions/django-json-schema-model.svg
 
-.. |django-versions| image:: https://img.shields.io/pypi/djversions/django-json-schema.svg
+.. |django-versions| image:: https://img.shields.io/pypi/djversions/django-json-schema-model.svg
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/django-json-schema.svg
-    :target: https://pypi.org/project/django-json-schema/
+.. |pypi-version| image:: https://img.shields.io/pypi/v/django-json-schema-model.svg
+    :target: https://pypi.org/project/django-json-schema-model/

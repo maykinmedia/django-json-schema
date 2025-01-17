@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.test import TestCase
 
-from django_json_schema.models import JsonSchema
+from django_json_schema_model.models import JsonSchema
 
 
 class TestJsonSchema(TestCase):

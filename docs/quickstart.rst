@@ -9,7 +9,7 @@ Install from PyPI with pip:
 
 .. code-block:: bash
 
-    pip install django-json-schema
+    pip install django-json-schema-model
 
 
 Usage
@@ -18,7 +18,7 @@ Usage
 .. code-block:: python
 
     from django.db import models
-    from django_json_schema.models import JsonSchema
+    from django_json_schema_model.models import JsonSchema
 
     class ProductType(models.Model):
         schema = models.ForeignKey(JsonSchema, on_delete=models.PROTECT)

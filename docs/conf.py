@@ -14,14 +14,14 @@ import sys
 from pathlib import Path
 
 current_dir = Path(__file__).parents[1]
-code_directory = current_dir / "django_json_schema"
+code_directory = current_dir / "django_json_schema_model"
 
 sys.path.insert(0, str(code_directory))
 
 
 # -- Project information -----------------------------------------------------
 
-project = "django_json_schema"
+project = "django_json_schema_model"
 copyright = "2025, Maykin Media"
 author = "Maykin Media"
 
