@@ -11,7 +11,7 @@ DEBUG = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "django_json_schema.db",
+        "NAME": BASE_DIR / "django_json_schema_model.db",
     }
 }
 
@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.admin",
-    "django_json_schema",
+    "django_json_schema_model",
     "testapp",
 ]
 
